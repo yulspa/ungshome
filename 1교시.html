@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1교시연습</title>
+</head>
+<div>
+  <h1 title="제목연습"><div>1교시 태그</div>&lt;연습&gt;</h1>
+  <h1 title="제목연습"><span>1교시 태그</span>&lt;연습&gt;</h1>
+           지금 태그를 연습하고 있습니다.
+  <hr />
+
+  <div style="background-color: red;">사랑해</div>
+  지금 태그를 연습하고 있습니다.
+  <span style="background-color: blue;">사랑해</span>
+  지금 태그를 연습하고 있습니다.
+
+  문서와 DOM
+<div>HTML 문서들은 "문서"(document)로 전달된다.[note 1] 이들은 구문 분석 과정을 거쳐 웹 브라우저 내에서 문서 객체 모델(DOM) 내부 표현으로 변환된다.[note 2][note 3]</div>
+
+<span>화면과 같은 웹 브라우저의 표현이라든지 자바스크립트의 접근은 그 다음에 이 내부 모델에서 수행되며 원래의 문서에서 수행되지는 않는다.</span>
+
+초기의 HTML 문서들은 오늘날 어느 정도는 크게 유효하지 않은 HTML이었으며 문법 오류 투성이었다. 가능한 이러한 오류를 해결하기 위해 파싱 과정도 필요했다. 그 결과의 모델은 정확하지는 않지만(이를테면 주의깊은 코더가 원래 의도한 바를 표현하지 못하는 등) 적어도 HTMl 표준에 따라 유효하다. 유효한 모델은 제공되는 태그 숩이 얼마나 나쁜지에 관계 없이 만들어진다. 극소수의 경우에만 파서가 파싱을 포기한다.
+
+요소와 태그
+요소와 태그는 널리 혼동되는 용어들이다. HTML 문서들은 태그를 포함하지만 요소를 포함하지는 않는다. 요소는 구문 분석 단계 "이후"에 이 태그들로부터 생성된다.
+
+요소의 위치는 시작 태그로부터 신장되며 일부 차일드 콘텐츠를 포함할 수 있으며 종료 태그로 종료된다.[3] HTML 문서 내의 다수의 요소에 해당되지만 모든 요소에 해당되는 것은 아니다.
+
+HTML이 SGML에 기반을 두므로[4] 구문 분석 또한 DTD, 특히 HTML 4.01의 것과 같은 HTML DTD의 사용에 의존한다.[5][note 4] DTD는 어느 요소 유형이 가능한지 규정하며(예: HTML을 이루는 요소 유형의 집합을 정의) 문서에서 나타나는 유효한 결합도 규정한다.
+
+HTML의 문서의 일부는
+
+<p>Para 1 <p>Para 2 <p>Para 3
+다음과 동등한 것으로 추론한다:
+
+<p>Para 1 </p><p>Para 2 </p><p>Para 3
+</body>
+</html>
