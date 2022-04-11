@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼태그연습</title>
+</head>
+  <h1>로그인</h1>
+  <form action="/login.php" method="get">
+    <p>아이디:<input type="text" name="id" /></p>
+    <p>비밀번호: <input type="password" name="pwd"/></p>
+    <p>생년월일: <input type="text" name="birth"></p>
+    <p>자기소개: <textarea rows="5" cols="20"></textarea></p>
+    <p>나라: <input type="text" list="con" name="con">
+      <datalist id="con">
+        <option value="한국" />
+        <option value="미국" />
+        <option value="중국" />
+      </datalist>
+    </p>
+    <p>가고싶은곳: <input type="text" list="where" name="wre">
+      <datalist id="where">
+        <option value="하와이" />
+        <option value="발리" />
+        <option value="보라카이" />
+      </datalist>
+    </p>
+    <p>
+      성별: 남자<input type="radio" name="sung" value="남"> 여자 <input type="radio" name="sung" value="여">
+    </p>
+    <p>
+      취미: 등산 <input type="checkbox" name="hob" value="등산"> 운동 <input type="checkbox" name="hob" value="운동">
+    </p>
+    <p><input type="submit" value="전송"> <input type="reset" value="취소"></p>
+    
+  </form>
+</body>
+</html>
