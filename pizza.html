@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>피자주문서</title>
+</head>
+<body>
+  <h2>피자 주문하기</h2>
+  <hr>
+  <form> 
+    <p>고객 명 : <input type = "text" name = "cname"></p> 
+    <p>전화번호 : <input type = "tel" name = "cPhone"></p> 
+    <p>E-mail : <input type = "email" name = "email"></p> 
+    <p>피자종류:
+    
+      <select name="pizzas" id="">
+        <option value="pepe">페페로니피자</option>
+        <option value="cheez">치즈피자</option>
+        <option value="pork">불고기피자</option>
+        <option value="shirimp">쉬림프피자</option>
+        <option value="combi">콤비네이션피자</option>
+      </select>
+    </p>
+    <fieldset style = "width:380px; height:165px;"> 
+      <legend>피자 사이즈</legend><br> 
+      <input type = "radio" name = "small"> Small<br/><br/> 
+      <input type = "radio" name = "medium"> Medium<br/><br/> 
+      <input type = "radio" name = "large"> Large<br/><br/> 
+    </fieldset> 
+    <fieldset style = "width:380px; height:210px;"> 
+      <legend>토핑 선택</legend><br> 
+      <input type = "checkbox" name = "bakon"> 베이컨 <br/><br/> 
+      <input type = "checkbox" name = "cheese"> 치즈 <br/><br/> 
+      <input type = "checkbox" name = "onion"> 양파 <br/><br/> 
+      <input type = "checkbox" name = "mushroom"> 버섯 <br/><br/> 
+    </fieldset> 
+    <p>희망배송시간 : <input type="time" id="appt" name="appt" min="09:00" max="18:00" required width = "150px"> </p> 
+    <p>배송시 요청사항 : <textarea rows = "2" cols = "22"></textarea> </p> <p> <input type = "submit" value = "주문하기"/> <input type = "reset" value = "다시 선택하기"/> </p> </form>
+
+</body>
+</html>
